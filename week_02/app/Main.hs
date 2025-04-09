@@ -1,6 +1,6 @@
 import Graphics.Gloss
 import Graphics.Gloss.Interface.IO.Game
-import Control.Monad.State
+
 
 -- Game Constants
 screenWidth, screenHeight :: Float
@@ -76,7 +76,7 @@ gameStep _ state = updateBall state
 
 main :: IO ()
 main = play
-    (InWindow "Pong" (round screenWidth, round screenHeight) (100, 100))
+    (InWindow "Haskell Pong Game" (round screenWidth, round screenHeight) (100, 100))
     black
     30
     initialState

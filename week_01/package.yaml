@@ -1,12 +1,11 @@
 name: gloss-example
-version: 0.1.1.1
+version: 0.0.0.1
 license: BSD3
 author: "FMI IS 2024/2025"
 
 dependencies:
   - base >= 4.14 && < 5
   - gloss
-  - mtl
 
 library:
   source-dirs: src
