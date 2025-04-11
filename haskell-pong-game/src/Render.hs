@@ -10,7 +10,7 @@ render :: GameState -> Picture
 render state = case gameMode state of
     Menu     -> renderMenu
     Playing  -> renderGame state
-    Paused  -> renderPause state
+    Paused   -> renderPause state
     GameOver -> renderGameOver state
 
 renderMenu :: Picture
