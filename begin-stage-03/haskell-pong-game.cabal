@@ -1,0 +1,35 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.37.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-pong-game
+version:        0.0.0.1
+author:         FMI IS 2024/2025
+maintainer:     FMI IS 2024/2025
+license:        BSD3
+build-type:     Simple
+
+library
+  other-modules:
+      Paths_haskell_pong_game
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.14 && <5
+    , gloss
+  default-language: Haskell2010
+
+executable haskell-pong-game
+  main-is: Main.hs
+  other-modules:
+      Paths_haskell_pong_game
+  hs-source-dirs:
+      app
+      src
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      base >=4.14 && <5
+    , gloss
+  default-language: Haskell2010
